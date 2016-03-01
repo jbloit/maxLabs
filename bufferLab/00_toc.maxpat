@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x64",
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -43,7 +43,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 402.0, 4.0, 150.0, 20.0 ],
-					"presentation_rect" : [ 401.0, 4.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "info~"
 				}
@@ -188,16 +187,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 153.0, 113.0, 99.0, 22.0 ],
+					"patching_rect" : [ 153.0, 113.0, 74.0, 22.0 ],
 					"style" : "",
-					"text" : "buffer~ aSample"
+					"text" : "buffer~ loop"
 				}
 
 			}
  ],
 		"lines" : [  ],
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
