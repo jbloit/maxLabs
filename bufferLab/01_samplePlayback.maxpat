@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 504.0, 255.0, 810.0, 722.0 ],
+		"rect" : [ 168.0, 86.0, 810.0, 639.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,69 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
+					"id" : "obj-10",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.0, 401.0, 156.0, 33.0 ],
+					"patching_rect" : [ 36.0, 46.0, 542.0, 33.0 ],
+					"presentation_rect" : [ 37.0, 71.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "set period equal to sample length"
+					"text" : "It's like if we were playing a looping vynil, and we have to set its rotation speed based on the length of the loop."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 85.0, 420.0, 206.0, 24.0 ],
+					"presentation_rect" : [ 88.0, 356.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "ramp from 0 to length of audio file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 102.0, 352.0, 118.0, 24.0 ],
+					"presentation_rect" : [ 110.0, 288.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "ramp from 0 to 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 335.0, 61.0, 22.0 ],
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 36.0, 20.0, 536.0, 20.0 ],
 					"style" : "",
-					"text" : "1.578156"
+					"text" : "Load an audio file, set the looping playhead (phasor) so that it plays the audio file at original speed."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-11",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 371.5, 371.5, 156.0, 37.0 ],
+					"style" : "",
+					"text" : "set period equal to sample length"
 				}
 
 			}
@@ -69,7 +111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 262.5, 428.0, 31.0, 22.0 ],
+					"patching_rect" : [ 316.0, 408.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "!/ 1."
 				}
@@ -82,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 262.5, 399.0, 47.0, 22.0 ],
+					"patching_rect" : [ 316.0, 379.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "/ 1000."
 				}
@@ -95,8 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 265.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 120.0, 269.0, 0.0, 0.0 ],
+					"patching_rect" : [ 85.0, 245.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -109,7 +150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.0, 265.0, 29.5, 22.0 ],
+					"patching_rect" : [ 46.0, 245.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0"
 				}
@@ -124,7 +165,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 261.0, 358.0, 50.0, 22.0 ],
+					"patching_rect" : [ 314.5, 338.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -137,7 +178,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 81.0, 510.0, 128.0, 47.0 ],
+					"patching_rect" : [ 46.0, 490.0, 128.0, 47.0 ],
 					"style" : ""
 				}
 
@@ -148,7 +189,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 578.0, 45.0, 45.0 ],
+					"patching_rect" : [ 46.0, 551.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -162,7 +203,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 81.0, 300.0, 50.0, 22.0 ],
+					"patching_rect" : [ 46.0, 307.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -174,7 +215,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 81.0, 442.0, 29.5, 22.0 ],
+					"patching_rect" : [ 46.0, 422.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "*~"
 				}
@@ -187,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 9,
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-					"patching_rect" : [ 198.0, 327.0, 103.0, 22.0 ],
+					"patching_rect" : [ 251.5, 307.0, 103.0, 22.0 ],
 					"style" : "",
 					"text" : "info~ sample"
 				}
@@ -200,7 +241,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 81.0, 372.0, 54.0, 22.0 ],
+					"patching_rect" : [ 46.0, 352.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "phasor~"
 				}
@@ -213,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 146.0, 208.0, 24.0, 24.0 ],
+					"patching_rect" : [ 111.0, 188.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -227,7 +268,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 208.0, 50.0, 22.0 ],
+					"patching_rect" : [ 40.0, 188.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -239,7 +280,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 81.0, 471.0, 82.0, 22.0 ],
+					"patching_rect" : [ 46.0, 451.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "play~ sample"
 				}
@@ -252,7 +293,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, 130.0, 50.0, 22.0 ],
+					"patching_rect" : [ 40.0, 110.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "replace"
 				}
@@ -265,7 +306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 75.0, 172.0, 90.0, 22.0 ],
+					"patching_rect" : [ 40.0, 152.0, 90.0, 22.0 ],
 					"style" : "",
 					"text" : "buffer~ sample"
 				}
@@ -418,25 +459,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
+					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

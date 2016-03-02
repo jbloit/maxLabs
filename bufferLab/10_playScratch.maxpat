@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 528.0, 129.0, 828.0, 870.0 ],
+		"rect" : [ 84.0, 79.0, 828.0, 666.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -73,7 +73,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 192.0, 535.0, 56.0, 22.0 ],
+					"patching_rect" : [ 197.5, 448.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -86,7 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 135.75, 344.0, 29.5, 22.0 ],
+					"patching_rect" : [ 135.75, 344.0, 299.5, 22.0 ],
 					"style" : "",
 					"text" : "* 1."
 				}
@@ -95,12 +95,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 13.0, 113.0, 20.0 ],
+					"patching_rect" : [ 3.0, 9.5, 113.0, 33.0 ],
 					"style" : "",
-					"text" : "Another scratcher."
+					"text" : "Another scratcher, using play~"
 				}
 
 			}
@@ -147,7 +148,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 192.0, 20.5, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/bloit/Downloads/maxLabs/samples/countdown/",
+					"prefix" : "Macintosh SSD:/Users/bloit/COMPOSITION/maxLabs/samples/countdown/",
 					"style" : ""
 				}
 
@@ -159,7 +160,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 86.5, 625.0, 80.0, 13.0 ],
+					"patching_rect" : [ 102.75, 480.0, 80.0, 13.0 ],
 					"style" : ""
 				}
 
@@ -171,7 +172,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 66.0, 590.0, 82.0, 22.0 ],
+					"patching_rect" : [ 83.25, 452.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "play~ sample"
 				}
@@ -186,7 +187,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 326.0, 205.0, 50.0, 22.0 ],
+					"patching_rect" : [ 421.0, 207.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -198,7 +199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 9,
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-					"patching_rect" : [ 263.0, 167.0, 103.0, 22.0 ],
+					"patching_rect" : [ 358.0, 169.0, 103.0, 22.0 ],
 					"style" : "",
 					"text" : "info~ sample"
 				}
@@ -239,7 +240,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.0, 672.0, 128.0, 47.0 ],
+					"patching_rect" : [ 83.25, 502.0, 128.0, 47.0 ],
 					"style" : ""
 				}
 
@@ -250,7 +251,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.0, 748.0, 45.0, 45.0 ],
+					"patching_rect" : [ 83.25, 578.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -262,7 +263,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 263.0, 134.0, 24.0, 24.0 ],
+					"patching_rect" : [ 358.0, 136.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -449,7 +450,7 @@
 			}
  ],
 		"dependency_cache" : [  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
