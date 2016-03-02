@@ -56,7 +56,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 346.0, 162.0, 22.0 ],
-					"presentation_rect" : [ 463.0, 346.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 10_playScratch.maxpat"
 				}
@@ -70,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 320.0, 215.0, 22.0 ],
-					"presentation_rect" : [ 460.0, 317.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 09_grooveRegionScratch.maxpat"
 				}
@@ -84,7 +82,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 137.0, 201.0, 22.0 ],
-					"presentation_rect" : [ 453.0, 128.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 08_grooveRegionLoop.maxpat"
 				}
@@ -98,7 +95,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 274.0, 229.0, 22.0 ],
-					"presentation_rect" : [ 455.0, 259.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 07_grooveLoopAndReverse.maxpat"
 				}
@@ -112,7 +108,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 77.0, 185.0, 22.0 ],
-					"presentation_rect" : [ 455.0, 246.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 06_groovePlayback.maxpat"
 				}
@@ -125,9 +120,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 298.0, 251.0, 150.0, 20.0 ],
-					"presentation_rect" : [ 297.0, 215.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "backwards playback",
+					"text" : "reverse playback",
 					"textjustification" : 2
 				}
 
@@ -140,7 +134,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 250.0, 206.0, 22.0 ],
-					"presentation_rect" : [ 456.0, 206.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 05_samplePlayReverse.maxpat"
 				}
@@ -154,7 +147,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 456.0, 210.0, 177.0, 22.0 ],
-					"presentation_rect" : [ 460.0, 184.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "load 04_sampleRecord.maxpat"
 				}
