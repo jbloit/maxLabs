@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x64",
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -37,6 +37,34 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 456.0, 388.0, 184.0, 22.0 ],
+					"presentation_rect" : [ 457.0, 390.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "load 11_grooveSyncPlay.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 302.0, 388.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 302.0, 388.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "sync buffers",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "comment",
@@ -332,7 +360,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 456.0, 399.0, 53.0, 22.0 ],
+					"patching_rect" : [ 456.0, 435.0, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "pcontrol"
 				}
@@ -418,6 +446,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
@@ -509,7 +546,7 @@
 			}
  ],
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
