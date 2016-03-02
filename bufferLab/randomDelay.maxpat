@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
-			"architecture" : "x64",
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -272,9 +272,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
-							"architecture" : "x64",
+							"minor" : 0,
+							"revision" : 3,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -543,14 +543,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-1",
-					"items" : [ "hihat.wav", ",", "hihat2.wav", ",", "hihat3.wav", ",", "hihat4.wav", ",", "hihat5.wav", ",", "hihatOpen.wav", ",", "hihatOpen2.wav", ",", "hihatOpen3.wav", ",", "kick.wav", ",", "kick2.wav", ",", "kick3.wav", ",", "kick4.wav", ",", "kick5.wav", ",", "snare.wav", ",", "snare2.wav", ",", "snare3.wav", ",", "snare4.wav", ",", "snare5.wav", ",", "snareBrushed.wav", ",", "snareBrushed2.wav", ",", "snareBrushed3.wav", ",", "tom.wav", ",", "tom2.wav", ",", "tom3.wav", ",", "tom4.wav" ],
+					"items" : [ "countdown", ",", "weSmellSausage.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 157.0, 106.0, 141.0, 22.0 ],
-					"prefix" : "Macintosh SSD:/Users/bloit/COMPOSITION/maxSoundPalette/samples/",
+					"prefix" : "Macintosh HD:/Users/bloit/Downloads/maxLabs/samples/",
 					"style" : ""
 				}
 
@@ -966,7 +966,7 @@
 		}
 ,
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
